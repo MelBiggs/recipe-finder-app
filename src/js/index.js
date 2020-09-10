@@ -18,7 +18,6 @@ import Likes from './models/Likes';
  * - Liked recipes
 */
 const state = {};
-window.state = state;
 
 /*** 
  * SEARCH CONTROLLER
@@ -75,7 +74,6 @@ elements.searchResPages.addEventListener('click', e => {
 
     // Get ID from url
     const id = window.location.hash.replace('#', '');
-    console.log(id);
 
     if (id) {
         // Prepare UI for changes
@@ -223,5 +221,3 @@ window.addEventListener('load', () => {
         controlLike();
     }
  });
-
- window.l = new List();
